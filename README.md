@@ -7,6 +7,6 @@ Main.py runs the program.
 The script reads:
 
 - sales orders from Hasura/Postgres database through GraphQL
-- all the invoices from the invoice folder
+- all invoices from the invoice folder
 
 The data is cleaned and combined into settlement reports (Excel).
