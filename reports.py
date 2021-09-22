@@ -2,9 +2,9 @@ import pandas as pd
 import os
 
 
-# Invoices directory
-dir_posti = os.fsencode("/Users/esko/Documents/invoice_reports/invoices/")
-dir_mh = os.fsencode("/Users/esko/Documents/invoice_reports/matkahuolto/")
+# Invoice directories
+dir_posti = os.fsencode("/Users/esko/Documents/invoice_reports/posti_invoices/")
+dir_mh = os.fsencode("/Users/esko/Documents/invoice_reports/matkahuolto_invoices/")
 
 # Output directory
 dir_reports = "/Users/esko/Documents/invoice_reports/reports/"
