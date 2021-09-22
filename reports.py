@@ -48,6 +48,7 @@ def matkahuolto():
             invoice.columns.values[0] = "Pvm"
             invoice.columns.values[1] = "Toimitus"
             invoice.columns.values[2] = "Hinta"
+            # Cleaning up date column
             invoice["Pvm"] = invoice["Pvm"].apply(lambda x: x[-10:])
             invoice = invoice[
                 invoice["Toimitus"].str.startswith("Lähtöpaikka: Turku", na=False)
