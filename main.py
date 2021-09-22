@@ -50,14 +50,12 @@ df1 = df1.filter(
         "order_no",
     ]
 )
-print(df1)
 
 df1 = df1.rename(
     columns={
         "order_date": "Pvm",
         "extra_id": "Tilausnum",
         "delivery.name": "Asiakas",
-        "sales_order_rows.warehouse": "Varasto",
         "delivery.delivery_method": "Toimitustapa",
         "order_no": "Myyntitilaus",
     }
