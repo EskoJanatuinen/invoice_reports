@@ -30,7 +30,7 @@ def posti(df1, df2):
             df_report.to_excel(
                 dir_reports + report + ".xlsx", index=False,
             )
-            print(f"Luotiin: {report}")
+            print(f"Created: {report}")
 
 
 def matkahuolto():
@@ -56,4 +56,4 @@ def matkahuolto():
             invoice.to_excel(
                 dir_reports + report + ".xlsx", index=False,
             )
-            print(f"Luotiin: {report}")
+            print(f"Created: {report}")
