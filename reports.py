@@ -3,11 +3,11 @@ import os
 
 
 # Invoice directories
-dir_posti = os.fsencode("/Users/esko/Documents/invoice_reports/posti_invoices/")
-dir_mh = os.fsencode("/Users/esko/Documents/invoice_reports/matkahuolto_invoices/")
+dir_posti = os.fsencode("./posti_invoices/")
+dir_mh = os.fsencode("./matkahuolto_invoices/")
 
 # Output directory
-dir_reports = "/Users/esko/Documents/invoice_reports/reports/"
+dir_reports = "./reports/"
 
 
 def posti(df1, df2):

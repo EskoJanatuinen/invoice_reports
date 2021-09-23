@@ -20,7 +20,7 @@ def has_token_expired():
 def write_jwt(token):
     decoded_token = jwt.decode(token, verify=False)
     expiration = str(decoded_token["exp"])
-    file = open("/Users/esko/Documents/invoice_reports/jwt_token.py", "w")
+    file = open("./jwt_token.py", "w")
     file.write('timestamp = "' + expiration + '"\n')
     file.write('jwt = "' + token + '"\n')
     file.close()
