@@ -18,7 +18,9 @@ def has_token_expired():
 
 
 def write_jwt(token):
-    decoded_token = jwt.decode(token, verify=False)
+    decoded_token = jwt.decode(
+        token, options={"verify_signature": False}, algorithms=["HS256"]
+    )
     expiration = str(decoded_token["exp"])
     file = open("./jwt_token.py", "w")
     file.write('timestamp = "' + expiration + '"\n')
